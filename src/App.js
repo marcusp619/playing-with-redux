@@ -4,6 +4,7 @@ import './App.css';
 import { Provider } from 'react-redux';
 import { allReducers } from './reducers/index';
 import UserList from './containers/user-list';
+import UserDetail from './containers/user-detail';
 
 const store = createStore(allReducers); // all data for the whole app
 
@@ -20,6 +21,7 @@ class App extends Component {
           <UserList />
           <hr /> 
           <h2>User Details</h2>
+          <UserDetail />
         </div>
       </Provider>
     );
